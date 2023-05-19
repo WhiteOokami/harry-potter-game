@@ -1,0 +1,105 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "cardGuyAttack",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.3333333333333333,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "ArmLeft/i11_upperArmLeft": {
+        "props": {
+          "position": [],
+          "angle": []
+        }
+      },
+      "ArmLeft": {
+        "props": {
+          "position": [],
+          "angle": [
+            {
+              "frame": 0,
+              "value": -3.847999999999997
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": -90.327
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": -12.569000000000003
+            }
+          ]
+        }
+      },
+      "ArmLeft/i06_lowerArmLeft": {
+        "props": {
+          "position": [],
+          "angle": []
+        }
+      },
+      "ArmLeft/i10_staff": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -41.852,
+                -20.495,
+                0
+              ]
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": [
+                -61.1,
+                -36.04,
+                0
+              ]
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": [
+                -56.958,
+                -48.969,
+                0
+              ]
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": 56.863
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 84.848
+            }
+          ]
+        }
+      },
+      "ArmLeft/i14_handLeft": {
+        "props": {
+          "position": [],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": 48.654
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

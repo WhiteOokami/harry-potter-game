@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "confused",
+    "texture": "09791b7b-fda1-4758-a224-4dc78b039e39",
+    "atlas": "",
+    "rect": [
+      2,
+      25,
+      294,
+      258
+    ],
+    "offset": [
+      -1,
+      -4
+    ],
+    "originalSize": [
+      300,
+      300
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

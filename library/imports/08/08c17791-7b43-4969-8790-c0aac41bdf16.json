@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "mobileJoystick",
+    "texture": "07e5dac6-a20a-4e6f-a52a-39e690cd5aa3",
+    "atlas": "",
+    "rect": [
+      3,
+      9,
+      294,
+      279
+    ],
+    "offset": [
+      0,
+      1.5
+    ],
+    "originalSize": [
+      300,
+      300
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

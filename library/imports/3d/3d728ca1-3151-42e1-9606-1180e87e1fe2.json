@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "i10_staff",
+    "texture": "e404151a-ba28-4982-9106-c457aafedf00",
+    "atlas": "",
+    "rect": [
+      21,
+      62,
+      70,
+      216
+    ],
+    "offset": [
+      -94,
+      -20
+    ],
+    "originalSize": [
+      300,
+      300
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

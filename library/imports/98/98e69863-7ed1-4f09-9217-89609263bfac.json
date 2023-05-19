@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "emojiButton",
+    "texture": "8c09a1ff-eebe-443a-b1be-250b3abd1d15",
+    "atlas": "",
+    "rect": [
+      5,
+      4,
+      291,
+      291
+    ],
+    "offset": [
+      0.5,
+      0.5
+    ],
+    "originalSize": [
+      300,
+      300
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

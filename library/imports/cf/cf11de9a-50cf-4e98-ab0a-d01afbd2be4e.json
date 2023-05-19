@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "rotatingthing",
+    "texture": "9febfd55-1dd1-430f-b865-95bca4ed03c8",
+    "atlas": "",
+    "rect": [
+      115,
+      9,
+      65,
+      277
+    ],
+    "offset": [
+      -16.5,
+      2.5
+    ],
+    "originalSize": [
+      328,
+      300
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

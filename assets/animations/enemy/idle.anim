@@ -1,0 +1,135 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "idle",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "LegLeft/i08_shoeLeft": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                37.633,
+                -54.693,
+                0
+              ]
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "LegRight/i09_shoeRight": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            }
+          ],
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -9.711,
+                -40.316,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "ArmLeft/i10_staff": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            }
+          ],
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -41.852,
+                -20.495,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "ArmLeft/i11_upperArmLeft": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -0.522,
+                -4.612,
+                0
+              ]
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "ArmLeft/i06_lowerArmLeft": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            }
+          ],
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -19.368,
+                -29.714,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "i13_card": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -2.695,
+                -7.284,
+                0
+              ]
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

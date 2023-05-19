@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "i06_lowerArmLeft",
+    "texture": "76a7e11c-6ffb-4dff-8e4b-718a57d5701d",
+    "atlas": "",
+    "rect": [
+      55,
+      148,
+      29,
+      37
+    ],
+    "offset": [
+      -80.5,
+      -16.5
+    ],
+    "originalSize": [
+      300,
+      300
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

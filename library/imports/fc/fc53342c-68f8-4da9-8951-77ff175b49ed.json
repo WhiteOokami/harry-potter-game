@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "joystickBall",
+    "texture": "4a7ceb9f-7249-4d76-ba51-58a71148495c",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      300,
+      294
+    ],
+    "offset": [
+      0,
+      3
+    ],
+    "originalSize": [
+      300,
+      300
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

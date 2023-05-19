@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "i11_upperArmLeft",
+    "texture": "b3392441-b370-4989-ab85-41f230af92a1",
+    "atlas": "",
+    "rect": [
+      72,
+      116,
+      31,
+      49
+    ],
+    "offset": [
+      -62.5,
+      9.5
+    ],
+    "originalSize": [
+      300,
+      300
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

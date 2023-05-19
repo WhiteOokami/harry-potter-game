@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "i09_shoeRight",
+    "texture": "39251ce3-3b98-4d0e-ac8d-fb58038f441c",
+    "atlas": "",
+    "rect": [
+      108,
+      258,
+      60,
+      34
+    ],
+    "offset": [
+      -12,
+      -125
+    ],
+    "originalSize": [
+      300,
+      300
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

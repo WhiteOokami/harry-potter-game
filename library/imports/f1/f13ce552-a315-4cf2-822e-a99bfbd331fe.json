@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "i08_shoeLeft",
+    "texture": "8b1058e1-fde6-4342-8ffb-edc069329d86",
+    "atlas": "",
+    "rect": [
+      72,
+      257,
+      60,
+      34
+    ],
+    "offset": [
+      -48,
+      -124
+    ],
+    "originalSize": [
+      300,
+      300
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

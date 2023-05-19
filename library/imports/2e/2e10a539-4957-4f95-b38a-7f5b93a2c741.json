@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "heartBroken",
+    "texture": "2b1522b5-c29d-46c2-a101-9150fc37395c",
+    "atlas": "",
+    "rect": [
+      3,
+      20,
+      294,
+      244
+    ],
+    "offset": [
+      0,
+      8
+    ],
+    "originalSize": [
+      300,
+      300
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

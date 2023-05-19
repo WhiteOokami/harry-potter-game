@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "openedChest",
+    "texture": "abf8c7aa-5ee3-4c7d-9e23-39c00afa7410",
+    "atlas": "",
+    "rect": [
+      48,
+      142,
+      225,
+      116
+    ],
+    "offset": [
+      10.5,
+      -50
+    ],
+    "originalSize": [
+      300,
+      300
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

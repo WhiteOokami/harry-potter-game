@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "i12_upperArmRight",
+    "texture": "23721d4c-39f1-49e4-81f4-3f161fa1ee1b",
+    "atlas": "",
+    "rect": [
+      160,
+      118,
+      36,
+      44
+    ],
+    "offset": [
+      28,
+      10
+    ],
+    "originalSize": [
+      300,
+      300
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

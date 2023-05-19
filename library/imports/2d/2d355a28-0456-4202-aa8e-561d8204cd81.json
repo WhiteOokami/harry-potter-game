@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "spawn",
+    "texture": "2e5f344c-538b-461b-ba4f-7d00e082007f",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      370,
+      421
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      370,
+      421
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

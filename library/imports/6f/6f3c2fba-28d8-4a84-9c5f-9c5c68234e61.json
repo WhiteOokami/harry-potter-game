@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "earleft",
+    "texture": "474cb074-5deb-4eb3-b019-070413924f60",
+    "atlas": "",
+    "rect": [
+      68,
+      68,
+      29,
+      36
+    ],
+    "offset": [
+      -67.5,
+      64
+    ],
+    "originalSize": [
+      300,
+      300
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

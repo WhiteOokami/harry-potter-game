@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "i03_watchWhite",
+    "texture": "b0dfe7d5-5233-4c81-9bd3-428d2114aa17",
+    "atlas": "",
+    "rect": [
+      83,
+      66,
+      156,
+      188
+    ],
+    "offset": [
+      11,
+      -10
+    ],
+    "originalSize": [
+      300,
+      300
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

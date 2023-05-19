@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "dangerblock",
+    "texture": "335a6b31-a3c8-42fb-b4a9-aea0f1568a19",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      50,
+      200
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      50,
+      200
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

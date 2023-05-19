@@ -1,0 +1,20 @@
+{
+  "platform": "runtime",
+  "actualPlatform": "jkw-game",
+  "template": "link",
+  "buildPath": "C:\\Users\\alany\\Desktop\\Cocos",
+  "debug": false,
+  "sourceMaps": false,
+  "embedWebDebugger": false,
+  "previewWidth": "1280",
+  "previewHeight": "720",
+  "useDebugKeystore": true,
+  "keystorePath": "",
+  "keystorePassword": "",
+  "keystoreAlias": "",
+  "keystoreAliasPassword": "",
+  "apiLevel": "",
+  "appABIs": [],
+  "vsVersion": "2017",
+  "buildScriptsOnly": false
+}

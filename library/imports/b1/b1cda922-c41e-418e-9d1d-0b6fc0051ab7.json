@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "bluePlatform",
+    "texture": "7d71ec5c-3732-40be-8800-218912e77b91",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      250,
+      50
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      250,
+      50
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "wink",
+    "texture": "ac864117-798a-4a40-8025-dfc82cc85277",
+    "atlas": "",
+    "rect": [
+      5,
+      15,
+      598,
+      524
+    ],
+    "offset": [
+      0.5,
+      26.5
+    ],
+    "originalSize": [
+      607,
+      607
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

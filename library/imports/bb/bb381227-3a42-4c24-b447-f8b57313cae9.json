@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "loveBox",
+    "texture": "dc447259-dc74-4136-ba6c-27b2300ca45c",
+    "atlas": "",
+    "rect": [
+      32,
+      14,
+      261,
+      285
+    ],
+    "offset": [
+      12.5,
+      -6.5
+    ],
+    "originalSize": [
+      300,
+      300
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}
