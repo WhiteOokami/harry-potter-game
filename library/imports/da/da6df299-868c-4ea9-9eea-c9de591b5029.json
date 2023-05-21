@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "snitch",
+    "texture": "36047555-f4b9-4011-b3cf-2dad03818b66",
+    "atlas": "",
+    "rect": [
+      13,
+      14,
+      96,
+      90
+    ],
+    "offset": [
+      0.5,
+      0
+    ],
+    "originalSize": [
+      121,
+      118
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

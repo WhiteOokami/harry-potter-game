@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "wooden_spike",
+    "texture": "a58f8f6b-c263-49ea-a970-8237948c6f25",
+    "atlas": "",
+    "rect": [
+      3,
+      9,
+      92,
+      359
+    ],
+    "offset": [
+      -1,
+      -1
+    ],
+    "originalSize": [
+      100,
+      375
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

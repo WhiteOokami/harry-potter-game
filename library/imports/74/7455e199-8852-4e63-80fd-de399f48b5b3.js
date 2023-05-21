@@ -10,13 +10,14 @@ cc.Class({
   properties: {
     player: null,
     following: false,
-    background: cc.Node,
+    // background: cc.Node,
     ui: cc.Node,
     yOffset: 0,
-    paralaxLayers: [cc.Node],
+    // paralaxLayers: [cc.Node],
     startPos: [],
     xOffsetPlayer: 0,
-    yOffsetPlayer: 0
+    yOffsetPlayer: 0,
+    maxOffset: 20
   },
   // LIFE-CYCLE CALLBACKS:
   onLoad: function onLoad() {
@@ -30,20 +31,20 @@ cc.Class({
         this.following = true;
       }
     } else {
+      var m = this.player.getComponent("movement");
+      if (m.movingRight && this.xOffsetPlayer < this.maxOffset) this.xOffsetPlayer += 20 * dt;else if (m.movingLeft && this.xOffsetPlayer > -this.maxOffset) this.xOffsetPlayer -= 20 * dt;else this.xOffsetPlayer /= 10;
       this.node.x = this.player.x + this.xOffsetPlayer;
       this.node.y = this.player.y + this.yOffset + this.yOffsetPlayer;
-    }
+    } // for (let i = 0; i < this.paralaxLayers.length; i++) {
+    //     this.paralaxLayers[i].setPosition(this.node.x / (i + 1) * 2 + this.startPos[i], this.node.y / (i + 1) * 2);
+    //     if (Math.abs(this.node.x - this.paralaxLayers[i].x) >= (this.paralaxLayers[i].width - this.node.width)) {
+    //         //this.paralaxLayers[i].setPosition(this.node.x + (this.node.x - this.paralaxLayers[i].x), this.node.y);
+    //         this.startPos[i] += this.node.x - this.paralaxLayers[i].x;
+    //     }
+    // }
+    // this.background.setPosition(this.node.x, this.node.y);
 
-    for (var i = 0; i < this.paralaxLayers.length; i++) {
-      this.paralaxLayers[i].setPosition(this.node.x / (i + 1) * 2 + this.startPos[i], this.node.y / (i + 1) * 2);
 
-      if (Math.abs(this.node.x - this.paralaxLayers[i].x) >= this.paralaxLayers[i].width - this.node.width) {
-        //this.paralaxLayers[i].setPosition(this.node.x + (this.node.x - this.paralaxLayers[i].x), this.node.y);
-        this.startPos[i] += this.node.x - this.paralaxLayers[i].x;
-      }
-    }
-
-    this.background.setPosition(this.node.x, this.node.y);
     this.ui.x = this.node.x;
     this.ui.y = this.node.y;
   }

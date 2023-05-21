@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "spiked_log",
+    "texture": "4c7f2a37-5d9c-4858-b124-93b72fc1c1e9",
+    "atlas": "",
+    "rect": [
+      2,
+      0,
+      70,
+      192
+    ],
+    "offset": [
+      1,
+      0
+    ],
+    "originalSize": [
+      72,
+      192
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

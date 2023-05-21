@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Treasure-Chest-icon",
+    "texture": "54ec65ea-c51d-48dd-aca3-cf1429e5e718",
+    "atlas": "",
+    "rect": [
+      13,
+      15,
+      486,
+      483
+    ],
+    "offset": [
+      0,
+      -0.5
+    ],
+    "originalSize": [
+      512,
+      512
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

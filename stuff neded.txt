@@ -1,0 +1,13 @@
+stuff neded
+√- font pack
+√- background
+- character (split into body parts)
+- buttons
+- dementors
+√- timer
+- platforms/boxes
+- checkpoint & endpoint
+√- spikes
+- powerups (idk)
+- UI (maybe)
+- emotes (maybe)

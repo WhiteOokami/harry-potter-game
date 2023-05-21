@@ -422,7 +422,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 744.65,
+      "width": 43.91,
       "height": 126
     },
     "_anchorPoint": {
@@ -434,15 +434,15 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        13.427,
-        16.177,
+        0,
+        0,
         0,
         0,
         0,
         0,
         1,
-        0.257,
-        0.257,
+        1,
+        1,
         0.257
       ]
     },
@@ -474,8 +474,8 @@
     ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
-    "_string": "WONDERLANDERS",
-    "_N$string": "WONDERLANDERS",
+    "_string": "E",
+    "_N$string": "E",
     "_fontSize": 80,
     "_lineHeight": 100,
     "_enableWrapText": true,
@@ -505,6 +505,7 @@
     "background": {
       "__id__": 3
     },
+    "playedBefore": false,
     "_id": "65zO2TRW1FXanzE5rFelh7"
   },
   {
