@@ -649,16 +649,6 @@
     "meta": 1684508734869,
     "relativePath": "code"
   },
-  "24e50888-523d-4f7b-96d8-bc61c2860896": {
-    "asset": 1684507251919,
-    "meta": 1684508734898,
-    "relativePath": "code\\aboutPlayer.js"
-  },
-  "a81a221b-dbfa-4a2d-aa87-7da47a8ecd5d": {
-    "asset": 1684507251922,
-    "meta": 1684508735175,
-    "relativePath": "code\\client.js"
-  },
   "aa7d1896-eae5-49a2-9c54-f3d6145181f1": {
     "asset": 1684507251923,
     "meta": 1684508735217,
@@ -668,11 +658,6 @@
     "asset": 1684507251924,
     "meta": 1684508735283,
     "relativePath": "code\\enemyScript.js"
-  },
-  "f88aaaa6-987b-4efe-a2ad-b42fd6a5185f": {
-    "asset": 1684507251925,
-    "meta": 1684508735330,
-    "relativePath": "code\\gameManager.js"
   },
   "18acb128-2749-4a8e-af74-4cb6e284de09": {
     "asset": 1684507251928,
@@ -688,16 +673,6 @@
     "asset": 1684507251930,
     "meta": 1684508735436,
     "relativePath": "code\\item.js"
-  },
-  "f0b8d1a8-16cf-43d1-8d9a-deec81b3eac4": {
-    "asset": 1684507251931,
-    "meta": 1684508735614,
-    "relativePath": "code\\lobby.js"
-  },
-  "caab8389-54a9-4314-8a83-34b371e6b330": {
-    "asset": 1684507251933,
-    "meta": 1684508735723,
-    "relativePath": "code\\movement.js"
   },
   "d755ebcb-eb27-4952-96be-a275e69c901b": {
     "asset": 1684507251936,
@@ -720,8 +695,8 @@
     "relativePath": "code\\storyManager.js"
   },
   "53261847-3a26-414b-ba4f-5e9d60d8ee83": {
-    "asset": 1684508727458,
-    "meta": 1684508735818,
+    "asset": 1684552881795,
+    "meta": 1684828278021,
     "relativePath": "Fonts"
   },
   "ecce12cd-8d09-4a5b-9ffc-b00323bc0e5f": {
@@ -820,8 +795,8 @@
     "relativePath": "prefabs\\enemy.prefab"
   },
   "76077c82-5319-4046-b478-53b5f6411dfd": {
-    "asset": 1684507251951,
-    "meta": 1684508735935,
+    "asset": 1685154100053,
+    "meta": 1685154100058,
     "relativePath": "prefabs\\platform.prefab"
   },
   "79b28ba8-e9c8-461a-8203-8f9ac2f74cfa": {
@@ -850,13 +825,13 @@
     "relativePath": "prefabs\\Spawnpoint.prefab"
   },
   "9c537949-91e7-4fca-8bb0-88aa5b5dfeba": {
-    "asset": 1684507251946,
-    "meta": 1684508735971,
+    "asset": 1685158074920,
+    "meta": 1685158074926,
     "relativePath": "prefabs\\SpinningBoi.prefab"
   },
   "54a6d6b4-0dba-48c3-9437-baed42aab19f": {
-    "asset": 1684652647425,
-    "meta": 1684652647429,
+    "asset": 1685157003783,
+    "meta": 1685157003791,
     "relativePath": "prefabs\\spike.prefab"
   },
   "8d4b1568-2d94-46e0-9ad4-b7e218a9560e": {
@@ -870,23 +845,23 @@
     "relativePath": "prefabs\\watch.prefab"
   },
   "c2d79c48-f415-42f6-a563-ab6a1e2953eb": {
-    "asset": 1684663557460,
-    "meta": 1684663557485,
+    "asset": 1685374738127,
+    "meta": 1685374738135,
     "relativePath": "Scenes\\home.fire"
   },
   "5f811c91-2968-4bfd-93a7-d8de73d78216": {
-    "asset": 1684563207288,
-    "meta": 1684563207298,
+    "asset": 1685322133533,
+    "meta": 1685322133559,
     "relativePath": "Scenes\\map1.fire"
   },
   "06dcf76e-4e24-4667-aece-f1bb185c1f70": {
-    "asset": 1684507251868,
-    "meta": 1684508736027,
+    "asset": 1684727613917,
+    "meta": 1684727613941,
     "relativePath": "Scenes\\map2.fire"
   },
   "f37fb524-622d-4265-b874-83b79029ea81": {
-    "asset": 1684507251871,
-    "meta": 1684508736042,
+    "asset": 1684727661742,
+    "meta": 1684727661765,
     "relativePath": "Scenes\\map3.fire"
   },
   "6c9c7a1f-d26e-4469-9af1-678188272238": {
@@ -900,8 +875,8 @@
     "relativePath": "textures"
   },
   "d6721f34-c8ab-413b-937f-dfc54e7f8be4": {
-    "asset": 1684508727614,
-    "meta": 1684508736051,
+    "asset": 1684553606183,
+    "meta": 1684828278024,
     "relativePath": "textures\\actual"
   },
   "c0b3b894-f06c-41e2-94df-4f868e04a100": {
@@ -1295,8 +1270,8 @@
     "relativePath": "textures\\actual\\end\\i03_3.png"
   },
   "4ffb0131-25b5-471f-9e1d-29563246f1f3": {
-    "asset": 1684508727585,
-    "meta": 1684508736947,
+    "asset": 1684553606183,
+    "meta": 1684828278030,
     "relativePath": "textures\\actual\\environment"
   },
   "7d71ec5c-3732-40be-8800-218912e77b91": {
@@ -1409,11 +1384,6 @@
     "meta": 1684508737198,
     "relativePath": "textures\\actual\\mobile\\mobileJoystick.png"
   },
-  "d956351d-9114-42b4-9866-a767a55e3d65": {
-    "asset": 1684507252126,
-    "meta": 1684508737217,
-    "relativePath": "textures\\actual\\nextBeforeButton.png"
-  },
   "049e9ec3-80a3-458e-aad1-b21aa42c1a1e": {
     "asset": 1684508727608,
     "meta": 1684508737219,
@@ -1505,8 +1475,8 @@
     "relativePath": "textures\\alert.png"
   },
   "4bdfa11d-fdbf-4ff5-b54c-9f02e774f2f4": {
-    "asset": 1684550593043,
-    "meta": 1684550593045,
+    "asset": 1684554340476,
+    "meta": 1684828278027,
     "relativePath": "textures\\actual\\background_2"
   },
   "96f0b32f-df40-47af-bfe0-721733c20ec4": {
@@ -1520,8 +1490,8 @@
     "relativePath": "Fonts\\WolfpackHalloweed-EaGOl.ttf"
   },
   "ee152e80-ceb8-4f12-9e3f-0e18ed0e8d97": {
-    "asset": 1684553573091,
-    "meta": 1684553573093,
+    "asset": 1684662883380,
+    "meta": 1684828278033,
     "relativePath": "textures\\actual\\environment_2"
   },
   "b86923f0-0465-4ba2-8e4b-a3b7dc4c0a3d": {
@@ -1544,16 +1514,6 @@
     "meta": 1684561660282,
     "relativePath": "textures\\actual\\environment_2\\sign.png"
   },
-  "2e063585-cb90-4a6f-aad7-6ef0aeca7db6": {
-    "asset": 1684562909461,
-    "meta": 1684562909486,
-    "relativePath": "textures\\actual\\environment_2\\platform.png"
-  },
-  "7455e199-8852-4e63-80fd-de399f48b5b3": {
-    "asset": 1684564760795,
-    "meta": 1684564767840,
-    "relativePath": "code\\cameraFollow.js"
-  },
   "a58f8f6b-c263-49ea-a970-8237948c6f25": {
     "asset": 1684652295277,
     "meta": 1684652295308,
@@ -1568,5 +1528,105 @@
     "asset": 1684662883379,
     "meta": 1684662883404,
     "relativePath": "textures\\actual\\environment_2\\snitch.png"
+  },
+  "6124e18f-84d0-4aed-84a3-b4324b22f70f": {
+    "asset": 1685060035873,
+    "meta": 1685060035876,
+    "relativePath": "textures\\actual\\mobile_2"
+  },
+  "db5331bc-c31d-4e2f-b2bd-200b99d64af0": {
+    "asset": 1685060095668,
+    "meta": 1685060095709,
+    "relativePath": "textures\\actual\\mobile_2\\button.png"
+  },
+  "f88aaaa6-987b-4efe-a2ad-b42fd6a5185f": {
+    "asset": 1685073900776,
+    "meta": 1685088264705,
+    "relativePath": "code\\gameManager.js"
+  },
+  "2e063585-cb90-4a6f-aad7-6ef0aeca7db6": {
+    "asset": 1685153795197,
+    "meta": 1685153795239,
+    "relativePath": "textures\\actual\\environment_2\\platform.png"
+  },
+  "7455e199-8852-4e63-80fd-de399f48b5b3": {
+    "asset": 1685155158693,
+    "meta": 1685155162748,
+    "relativePath": "code\\cameraFollow.js"
+  },
+  "1c4eb12a-b395-471d-9223-c0ea949e3d36": {
+    "asset": 1685156314942,
+    "meta": 1685156314967,
+    "relativePath": "textures\\actual\\mobile_2\\emojiButton.png"
+  },
+  "981e89d8-d68a-43b9-b59f-694d71176e42": {
+    "asset": 1685158031226,
+    "meta": 1685158031256,
+    "relativePath": "textures\\actual\\environment_2\\wall.png"
+  },
+  "cfaf8678-7e53-4ad2-a15c-e4db790607b3": {
+    "asset": 1685201129025,
+    "meta": 1685201129076,
+    "relativePath": "textures\\actual\\environment_2\\wall2.png"
+  },
+  "69e03741-719c-4ff7-b7b3-a66b4594ae86": {
+    "asset": 1685362022736,
+    "meta": 1685362022779,
+    "relativePath": "textures\\actual\\mobile_2\\gryffindoor.png"
+  },
+  "38ff653f-05f6-4d3b-9104-d2446e635a7e": {
+    "asset": 1685362022737,
+    "meta": 1685362022784,
+    "relativePath": "textures\\actual\\mobile_2\\ravenclae.png"
+  },
+  "1fe04f17-cfce-49ed-a5a9-18225df91dd6": {
+    "asset": 1685362022739,
+    "meta": 1685362022811,
+    "relativePath": "textures\\actual\\mobile_2\\hufflepfuf.png"
+  },
+  "b08c7970-1136-42d3-a81e-2d0d53dc13e8": {
+    "asset": 1685362022738,
+    "meta": 1685362022815,
+    "relativePath": "textures\\actual\\mobile_2\\slytherin.png"
+  },
+  "d956351d-9114-42b4-9866-a767a55e3d65": {
+    "asset": 1685363701388,
+    "meta": 1685363704344,
+    "relativePath": "textures\\actual\\nextBeforeButton.png"
+  },
+  "f933fb2a-4694-43d0-9602-0624bb2d025b": {
+    "asset": 1685365362340,
+    "meta": 1685365362405,
+    "relativePath": "textures\\actual\\mobile_2\\Hogwarts-Castle.png"
+  },
+  "9061501e-b788-4f88-89ec-df147cc4c240": {
+    "asset": 1685367078991,
+    "meta": 1685367275931,
+    "relativePath": "textures\\actual\\frame.png"
+  },
+  "24e50888-523d-4f7b-96d8-bc61c2860896": {
+    "asset": 1685368511520,
+    "meta": 1685368755986,
+    "relativePath": "code\\aboutPlayer.js"
+  },
+  "a81a221b-dbfa-4a2d-aa87-7da47a8ecd5d": {
+    "asset": 1685368512332,
+    "meta": 1685368756201,
+    "relativePath": "code\\client.js"
+  },
+  "caab8389-54a9-4314-8a83-34b371e6b330": {
+    "asset": 1685425821965,
+    "meta": 1685432254917,
+    "relativePath": "code\\movement.js"
+  },
+  "f0b8d1a8-16cf-43d1-8d9a-deec81b3eac4": {
+    "asset": 1685432716833,
+    "meta": 1685432865889,
+    "relativePath": "code\\lobby.js"
+  },
+  "82c29da6-463c-423c-b266-cd57dfb44061": {
+    "asset": 1685433436463,
+    "meta": 1685433439664,
+    "relativePath": "code\\colorTheme.js"
   }
 }

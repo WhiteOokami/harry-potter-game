@@ -33,6 +33,11 @@ cc.Class({
     joystickMax: 69,
     joystickVector: cc.v2(),
     joystickBall: cc.Node,
+    leftButton: cc.Node,
+    rightButton: cc.Node,
+    jumpButton: cc.Node,
+    potionButton: cc.Node,
+    cakeButton: cc.Node,
     emojis: cc.Node,
     timeStep: 0,
     startTimer: false,
@@ -45,19 +50,40 @@ cc.Class({
     total: 0,
     sum: 0
   },
+  // disable() {
+  //     if (cc.sys.platform == cc.sys.WECHAT_GAME) {
+  //         let joystick = cc.find("Canvas/UI/MOBILE/JOYSTICK");
+  //         let jumpButton = cc.find("Canvas/UI/MOBILE/JUMP");
+  //         let potionButton = cc.find("Canvas/UI/MOBILE/POTION");
+  //         let cakeButton = cc.find("Canvas/UI/MOBILE/CAKE");
+  //         joystick.off(cc.Node.EventType.TOUCH_START, this.joystickStart, this);
+  //         joystick.off(cc.Node.EventType.TOUCH_MOVE, this.joystickMove, this);
+  //         joystick.off(cc.Node.EventType.TOUCH_END, this.joystickEnd, this);
+  //         joystick.off(cc.Node.EventType.TOUCH_CANCEL, this.joystickEnd, this);
+  //         jumpButton.off(cc.Node.EventType.TOUCH_START, this.jump, this);
+  //         potionButton.off(cc.Node.EventType.TOUCH_START, this.shrink, this);
+  //         cakeButton.off(cc.Node.EventType.TOUCH_START, this.grow, this);
+  //     } else {
+  //         cc.systemEvent.off(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
+  //         cc.systemEvent.off(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
+  //     }
+  //     this.node.getComponent(cc.RigidBody).gravityScale = 0;
+  //     this.node.getComponent(cc.RigidBody).linearVelocity = cc.Vec2(0, 0);
+  // },
+  start: function start() {
+    this.leftButton = cc.find("Canvas/UI/MOBILE2/LEFT");
+    this.rightButton = cc.find("Canvas/UI/MOBILE2/RIGHT");
+    this.jumpButton = cc.find("Canvas/UI/MOBILE2/JUMP");
+    this.potionButton = cc.find("Canvas/UI/MOBILE2/POTION");
+    this.cakeButton = cc.find("Canvas/UI/MOBILE2/CAKE");
+  },
   disable: function disable() {
     if (cc.sys.platform == cc.sys.WECHAT_GAME) {
-      var joystick = cc.find("Canvas/UI/MOBILE/JOYSTICK");
-      var jumpButton = cc.find("Canvas/UI/MOBILE/JUMP");
-      var potionButton = cc.find("Canvas/UI/MOBILE/POTION");
-      var cakeButton = cc.find("Canvas/UI/MOBILE/CAKE");
-      joystick.off(cc.Node.EventType.TOUCH_START, this.joystickStart, this);
-      joystick.off(cc.Node.EventType.TOUCH_MOVE, this.joystickMove, this);
-      joystick.off(cc.Node.EventType.TOUCH_END, this.joystickEnd, this);
-      joystick.off(cc.Node.EventType.TOUCH_CANCEL, this.joystickEnd, this);
-      jumpButton.off(cc.Node.EventType.TOUCH_START, this.jump, this);
-      potionButton.off(cc.Node.EventType.TOUCH_START, this.shrink, this);
-      cakeButton.off(cc.Node.EventType.TOUCH_START, this.grow, this);
+      this.leftButton.off(cc.Node.EventType.TOUCH_START, this.moveLeft, this);
+      this.rightButton.off(cc.Node.EventType.TOUCH_START, this.moveRight, this);
+      this.jumpButton.off(cc.Node.EventType.TOUCH_START, this.jump, this);
+      this.potionButton.off(cc.Node.EventType.TOUCH_START, this.shrink, this);
+      this.cakeButton.off(cc.Node.EventType.TOUCH_START, this.grow, this);
     } else {
       cc.systemEvent.off(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
       cc.systemEvent.off(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
@@ -235,9 +261,8 @@ cc.Class({
         this.shrink();
         break;
 
-      case cc.macro.KEY.space:
-        if (this.grounded) this.jump();
-        break;
+      case cc.macro.KEY.e:
+        cc.find("system").getComponent("gameManager").showEmojis();
     }
   },
   onKeyUp: function onKeyUp(event) {
@@ -347,51 +372,50 @@ cc.Class({
 
         if (this.clientScript.getComponent("client").playerId == this.node.name && !this.isPlayer) {
           this.isPlayer = true;
-          var rb = this.getComponent(cc.RigidBody);
+          var rb = this.getComponent(cc.RigidBody); // if (cc.sys.platform == cc.sys.WECHAT_GAME) {
+          //     //set mobile touch control listeners
+          //     cc.find("Canvas/UI/MOBILE").active = true;
+          //     this.joystickBall = cc.find("Canvas/UI/MOBILE/JOYSTICK/BALL");
+          //     let joystick = cc.find("Canvas/UI/MOBILE/JOYSTICK");
+          //     let jumpButton = cc.find("Canvas/UI/MOBILE/JUMP");
+          //     let potionButton = cc.find("Canvas/UI/MOBILE/POTION");
+          //     let cakeButton = cc.find("Canvas/UI/MOBILE/CAKE");
+          //     joystick.on(cc.Node.EventType.TOUCH_START, this.joystickStart, this);
+          //     joystick.on(cc.Node.EventType.TOUCH_MOVE, this.joystickMove, this);
+          //     joystick.on(cc.Node.EventType.TOUCH_END, this.joystickEnd, this);
+          //     joystick.on(cc.Node.EventType.TOUCH_CANCEL, this.joystickEnd, this);
+          //     jumpButton.on(cc.Node.EventType.TOUCH_START, this.jump, this);
+          //     potionButton.on(cc.Node.EventType.TOUCH_START, this.shrink, this);
+          //     cakeButton.on(cc.Node.EventType.TOUCH_START, this.grow, this);
+          // } else {
+          //     this.joystickBall = cc.find("Canvas/UI/MOBILE/JOYSTICK/BALL");
+          //     let joystick = cc.find("Canvas/UI/MOBILE/JOYSTICK");
+          //     let jumpButton = cc.find("Canvas/UI/MOBILE/JUMP");
+          //     let potionButton = cc.find("Canvas/UI/MOBILE/POTION");
+          //     let cakeButton = cc.find("Canvas/UI/MOBILE/CAKE");
+          //     joystick.on(cc.Node.EventType.TOUCH_START, this.joystickStart, this);
+          //     joystick.on(cc.Node.EventType.TOUCH_MOVE, this.joystickMove, this);
+          //     joystick.on(cc.Node.EventType.TOUCH_END, this.joystickEnd, this);
+          //     joystick.on(cc.Node.EventType.TOUCH_CANCEL, this.joystickEnd, this);
+          //     jumpButton.on(cc.Node.EventType.TOUCH_START, this.jump, this);
+          //     potionButton.on(cc.Node.EventType.TOUCH_START, this.shrink, this);
+          //     cakeButton.on(cc.Node.EventType.TOUCH_START, this.grow, this);
+          //     cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
+          //     cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
+          // }
 
           if (cc.sys.platform == cc.sys.WECHAT_GAME) {
             //set mobile touch control listeners
             cc.find("Canvas/UI/MOBILE").active = true;
-            this.joystickBall = cc.find("Canvas/UI/MOBILE/JOYSTICK/BALL");
-            var joystick = cc.find("Canvas/UI/MOBILE/JOYSTICK");
-            var jumpButton = cc.find("Canvas/UI/MOBILE/JUMP");
-            var potionButton = cc.find("Canvas/UI/MOBILE/POTION");
-            var cakeButton = cc.find("Canvas/UI/MOBILE/CAKE");
-            joystick.on(cc.Node.EventType.TOUCH_START, this.joystickStart, this);
-            joystick.on(cc.Node.EventType.TOUCH_MOVE, this.joystickMove, this);
-            joystick.on(cc.Node.EventType.TOUCH_END, this.joystickEnd, this);
-            joystick.on(cc.Node.EventType.TOUCH_CANCEL, this.joystickEnd, this);
-            jumpButton.on(cc.Node.EventType.TOUCH_START, this.jump, this);
-            potionButton.on(cc.Node.EventType.TOUCH_START, this.shrink, this);
-            cakeButton.on(cc.Node.EventType.TOUCH_START, this.grow, this);
-          } else {
-            this.joystickBall = cc.find("Canvas/UI/MOBILE/JOYSTICK/BALL");
-
-            var _joystick = cc.find("Canvas/UI/MOBILE/JOYSTICK");
-
-            var _jumpButton = cc.find("Canvas/UI/MOBILE/JUMP");
-
-            var _potionButton = cc.find("Canvas/UI/MOBILE/POTION");
-
-            var _cakeButton = cc.find("Canvas/UI/MOBILE/CAKE");
-
-            _joystick.on(cc.Node.EventType.TOUCH_START, this.joystickStart, this);
-
-            _joystick.on(cc.Node.EventType.TOUCH_MOVE, this.joystickMove, this);
-
-            _joystick.on(cc.Node.EventType.TOUCH_END, this.joystickEnd, this);
-
-            _joystick.on(cc.Node.EventType.TOUCH_CANCEL, this.joystickEnd, this);
-
-            _jumpButton.on(cc.Node.EventType.TOUCH_START, this.jump, this);
-
-            _potionButton.on(cc.Node.EventType.TOUCH_START, this.shrink, this);
-
-            _cakeButton.on(cc.Node.EventType.TOUCH_START, this.grow, this);
-
-            cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
-            cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
           }
+
+          this.leftButton.on(cc.Node.EventType.TOUCH_START, this.moveLeft, this);
+          this.rightButton.on(cc.Node.EventType.TOUCH_START, this.moveRight, this);
+          this.jumpButton.on(cc.Node.EventType.TOUCH_START, this.jump, this);
+          this.potionButton.on(cc.Node.EventType.TOUCH_START, this.shrink, this);
+          this.cakeButton.on(cc.Node.EventType.TOUCH_START, this.grow, this);
+          cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
+          cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
         }
       }
     } // this.getComponent(cc.RigidBody).gravityScale = dt *     ;

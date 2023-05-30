@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "gryffindoor",
+    "texture": "69e03741-719c-4ff7-b7b3-a66b4594ae86",
+    "atlas": "",
+    "rect": [
+      76,
+      27,
+      373,
+      421
+    ],
+    "offset": [
+      -0.5,
+      -0.5
+    ],
+    "originalSize": [
+      526,
+      474
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

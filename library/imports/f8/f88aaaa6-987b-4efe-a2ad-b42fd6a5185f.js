@@ -74,12 +74,8 @@ cc.Class({
     this.spectateUI.active = true;
   },
   showEmojis: function showEmojis() {
-    this.emojiButton.active = false;
-    this.emojiUI.active = true;
-  },
-  hideEmojis: function hideEmojis() {
-    this.emojiButton.active = true;
-    this.emojiUI.active = false;
+    this.emojiButton.active = !this.emojiButton.active;
+    this.emojiUI.active = !this.emojiUI.active;
   },
   sepctatePrev: function sepctatePrev() {
     this.spectateIndex -= 1;

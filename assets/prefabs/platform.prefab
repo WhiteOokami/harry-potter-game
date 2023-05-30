@@ -30,10 +30,13 @@
       },
       {
         "__id__": 5
+      },
+      {
+        "__id__": 6
       }
     ],
     "_prefab": {
-      "__id__": 6
+      "__id__": 7
     },
     "_opacity": 255,
     "_color": {
@@ -45,8 +48,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 306,
-      "height": 38
+      "width": 314.5,
+      "height": 48
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -57,16 +60,16 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        191.309,
-        428.592,
+        1520.6,
+        304.5,
         0,
         0,
         0,
         0,
         1,
-        1.071,
-        1.071,
-        1.071
+        1,
+        1,
+        1
       ]
     },
     "_eulerAngles": {
@@ -78,8 +81,8 @@
     "_skewX": 0,
     "_skewY": 0,
     "_is3DNode": false,
-    "_groupIndex": 1,
-    "groupIndex": 1,
+    "_groupIndex": 11,
+    "groupIndex": 11,
     "_id": ""
   },
   {
@@ -98,7 +101,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "b2127b57-d57a-427f-bc1b-40960bbf279f"
+      "__uuid__": "23f19c88-c0bc-4bb4-b009-12754db19fc0"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -134,7 +137,7 @@
     },
     "_angularVelocity": 0,
     "_fixedRotation": false,
-    "enabledContactListener": false,
+    "enabledContactListener": true,
     "bullet": false,
     "awakeOnLoad": true,
     "_id": ""
@@ -155,13 +158,13 @@
     "body": null,
     "_offset": {
       "__type__": "cc.Vec2",
-      "x": -6.3,
-      "y": -18.2
+      "x": -6.1,
+      "y": -25.3
     },
     "_size": {
       "__type__": "cc.Size",
-      "width": 301.8,
-      "height": 28.3
+      "width": 306,
+      "height": 30
     },
     "_id": ""
   },
@@ -175,14 +178,18 @@
     "_enabled": true,
     "movingPlayer": null,
     "rb": null,
-    "speed": 1000,
-    "startPos": 0,
+    "speed": 200,
+    "startPos": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
     "distance": 100,
     "direction": 1,
     "players": null,
-    "spinning": true,
+    "spinning": false,
     "sideToSide": false,
-    "dropping": false,
+    "dropping": true,
     "spinSpeed": 1,
     "playersOnMe": 0,
     "maxPlayers": 1,
@@ -190,6 +197,27 @@
     "rising": false,
     "upDown": false,
     "moveUpTime": 3,
+    "_id": ""
+  },
+  {
+    "__type__": "cc.BoxCollider",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "tag": 0,
+    "_offset": {
+      "__type__": "cc.Vec2",
+      "x": -3.5,
+      "y": -16.2
+    },
+    "_size": {
+      "__type__": "cc.Size",
+      "width": 297,
+      "height": 11.2
+    },
     "_id": ""
   },
   {

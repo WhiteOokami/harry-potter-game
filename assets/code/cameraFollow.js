@@ -14,6 +14,7 @@ cc.Class({
         xOffsetPlayer: 0,
         yOffsetPlayer: 0,
         maxOffset: 20,
+        startY: 0,
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -24,6 +25,7 @@ cc.Class({
 
 
     start() {
+        startY = this.player.y;
     },
 
     update(dt) {
@@ -41,7 +43,7 @@ cc.Class({
             else
                 this.xOffsetPlayer/=10
             this.node.x = this.player.x + this.xOffsetPlayer;
-            this.node.y = this.player.y + this.yOffset + this.yOffsetPlayer;
+            this.node.y = this.player.y + (this.player.y-startY)*0.5;
         }
         // for (let i = 0; i < this.paralaxLayers.length; i++) {
         //     this.paralaxLayers[i].setPosition(this.node.x / (i + 1) * 2 + this.startPos[i], this.node.y / (i + 1) * 2);

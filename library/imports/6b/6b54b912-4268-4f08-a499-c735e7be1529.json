@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ravenclae",
+    "texture": "38ff653f-05f6-4d3b-9104-d2446e635a7e",
+    "atlas": "",
+    "rect": [
+      12,
+      22,
+      410,
+      527
+    ],
+    "offset": [
+      0.5,
+      3
+    ],
+    "originalSize": [
+      433,
+      577
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

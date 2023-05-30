@@ -7,6 +7,7 @@ cc.Class({
         crowns: 0,
         openid: null,
         serverIp: null,
+        houseIndex: 0,
     },
 
     // LIFE-CYCLE CALLBACKS:

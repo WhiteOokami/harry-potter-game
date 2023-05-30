@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "hufflepfuf",
+    "texture": "1fe04f17-cfce-49ed-a5a9-18225df91dd6",
+    "atlas": "",
+    "rect": [
+      12,
+      23,
+      418,
+      514
+    ],
+    "offset": [
+      0,
+      2
+    ],
+    "originalSize": [
+      442,
+      564
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

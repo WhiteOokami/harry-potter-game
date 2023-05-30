@@ -165,7 +165,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "cf11de9a-50cf-4e98-ab0a-d01afbd2be4e"
+      "__uuid__": "d20409c1-1d67-4ce4-967a-bb7b1eeaeb3f"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -229,6 +229,8 @@
     "maxPlayers": 1,
     "falling": false,
     "rising": false,
+    "upDown": false,
+    "moveUpTime": 3,
     "_id": ""
   },
   {
@@ -357,7 +359,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "cf11de9a-50cf-4e98-ab0a-d01afbd2be4e"
+      "__uuid__": "d20409c1-1d67-4ce4-967a-bb7b1eeaeb3f"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -421,6 +423,8 @@
     "maxPlayers": 1,
     "falling": false,
     "rising": false,
+    "upDown": false,
+    "moveUpTime": 3,
     "_id": ""
   },
   {
@@ -466,7 +470,7 @@
       "__id__": 1
     },
     "asset": {
-      "__id__": 0
+      "__uuid__": "9c537949-91e7-4fca-8bb0-88aa5b5dfeba"
     },
     "fileId": "",
     "sync": false

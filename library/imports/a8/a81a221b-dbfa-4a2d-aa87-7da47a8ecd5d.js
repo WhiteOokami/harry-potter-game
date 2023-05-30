@@ -60,6 +60,7 @@ cc.Class({
     gameStarted: false,
     startScreen: cc.Node,
     crowns: 0,
+    houseIndex: 0,
     chestPrefab: cc.Prefab,
     serverIp: "",
     pointsLost: 0
@@ -94,7 +95,7 @@ cc.Class({
   sendEmoji: function sendEmoji(event, customEventData) {
     // send emoji, customEventData will be the type
     this.sendWebsocketMessage("emoji", [this.playerId, customEventData]);
-    this.node.getComponent("gameManager").hideEmojis();
+    this.node.getComponent("gameManager").showEmojis();
   },
   createPlayer: function createPlayer(player) {
     //my character
@@ -398,10 +399,12 @@ cc.Class({
     //this.playerId = info.id;
     //this.port = info.port;
     this.pointsLost = 5;
-    this.playerId = cc.find("MANAGER").getComponent("aboutPlayer").playerId;
-    this.port = cc.find("MANAGER").getComponent("aboutPlayer").room;
-    this.serverIp = cc.find("MANAGER").getComponent("aboutPlayer").serverIp;
-    this.crowns = cc.find("MANAGER").getComponent("aboutPlayer").crowns;
+    var abp = cc.find("MANAGER").getComponent("aboutPlayer");
+    this.playerId = abp.playerId;
+    this.port = abp.room;
+    this.serverIp = abp.serverIp;
+    this.crowns = abp.crowns;
+    this.houseIndex = abp.houseIndex;
     this.players = new Map();
     this.joinServer();
   },

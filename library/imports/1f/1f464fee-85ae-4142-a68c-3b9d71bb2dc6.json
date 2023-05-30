@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "slytherin",
+    "texture": "b08c7970-1136-42d3-a81e-2d0d53dc13e8",
+    "atlas": "",
+    "rect": [
+      13,
+      22,
+      434,
+      493
+    ],
+    "offset": [
+      -0.5,
+      2
+    ],
+    "originalSize": [
+      461,
+      541
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

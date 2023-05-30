@@ -77,12 +77,8 @@ cc.Class({
         this.spectateUI.active = true;
     },
     showEmojis() {
-        this.emojiButton.active = false;
-        this.emojiUI.active = true;
-    },
-    hideEmojis() {
-        this.emojiButton.active = true;
-        this.emojiUI.active = false;
+        this.emojiButton.active = !this.emojiButton.active;
+        this.emojiUI.active = !this.emojiUI.active;
     },
     sepctatePrev() {
         this.spectateIndex -=1;

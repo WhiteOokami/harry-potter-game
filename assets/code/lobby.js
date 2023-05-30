@@ -19,12 +19,13 @@ class PlayerData {
 
 
 class PlayerInfo {
-    constructor(id, name, crowns, wins, loses) {
+    constructor(id, name, crowns, wins, loses, houseIndex) {
         this.id = id;
         this.name = name;
         this.crowns = crowns;
         this.wins = wins;
         this.loses = loses;
+        this.houseIndex = houseIndex;
     }
 };
 
@@ -69,6 +70,7 @@ cc.Class({
         passwordNode: cc.Node,
         password: null,
         crowns: 0,
+        houseIndex: 0,
         loginErrorNode: cc.Node,
     },
 
@@ -135,10 +137,12 @@ cc.Class({
             else if (myData.type == "success") {
                 this.playerId = myData.data.id;
                 this.crowns = myData.data.crowns;
+                this.houseIndex = myData.data.houseIndex;
                 cc.find("Canvas/CROWNS/num").getComponent(cc.Label).string = myData.data.crowns;
                 cc.find("Canvas/WINS").getComponent(cc.Label).string = myData.data.wins + " wins";
                 cc.find("Canvas/LOSES").getComponent(cc.Label).string = myData.data.loses + " loses";
                 cc.find("Canvas/USERNAME").getComponent(cc.Label).string = this.playerName;
+                cc.find("MANAGER").getComponent("colorTheme").changeColor(this.houseIndex);
                 cc.sys.localStorage.setItem("username", JSON.stringify(this.playerName));
                 cc.sys.localStorage.setItem("password", JSON.stringify(this.password));
                 this.signInNode.active = false;
@@ -192,10 +196,12 @@ cc.Class({
                     //};
                     //module.exports = thePlayerInfo;
 
-                    cc.find("MANAGER").getComponent("aboutPlayer").playerId = this.playerId;
-                    cc.find("MANAGER").getComponent("aboutPlayer").room = myData.data[1];
-                    cc.find("MANAGER").getComponent("aboutPlayer").serverIp = this.serverIp;
-                    cc.find("MANAGER").getComponent("aboutPlayer").crowns = this.crowns;
+                    let abp = cc.find("MANAGER").getComponent("aboutPlayer");
+                    abp.playerId = this.playerId;
+                    abp.room = myData.data[1];
+                    abp.serverIp = this.serverIp;
+                    abp.crowns = this.crowns;
+                    abp.houseIndex = this.houseIndex;
 
                     this.leaveLobby();
 
@@ -329,6 +335,7 @@ cc.Class({
     },
 
     refreshLeader() {
+        let houses =  ["Gry", "Huf", "Rav", "Sly"];
         if (cc.sys.platform == cc.sys.WECHAT_GAME) {
             wx.request({
                 url: "http://" + this.serverIp + ":3000/",
@@ -342,7 +349,7 @@ cc.Class({
                         let player = cc.instantiate(cc.find("Lobby Manager").getComponent("lobby").playerStatPrefab);
                         player.parent = cc.find("Lobby Manager").getComponent("lobby").leaderboardNode;
                         player.getChildByName("PLACE").getComponent(cc.Label).string = i + 1 + ".";
-                        player.getChildByName("NAME").getComponent(cc.Label).string = response[i].name;
+                        player.getChildByName("NAME").getComponent(cc.Label).string = `[${houses[houseIndex]}] ` + response[i].name;
                         player.getChildByName("CROWNS").getComponent(cc.Label).string = response[i].crowns;
                 }
             }
@@ -353,13 +360,13 @@ cc.Class({
 
             xhr.onreadystatechange = function () {
                 cc.find("Lobby Manager").getComponent("lobby").leaderboardNode.removeAllChildren();
-
+                console.log(xhr.responseText);
                 var response = JSON.parse(xhr.responseText).data;
                 for (var i = 0; i < response.length; i++) {
                     let player = cc.instantiate(cc.find("Lobby Manager").getComponent("lobby").playerStatPrefab);
                     player.parent = cc.find("Lobby Manager").getComponent("lobby").leaderboardNode;
                     player.getChildByName("PLACE").getComponent(cc.Label).string = i + 1 + ".";
-                    player.getChildByName("NAME").getComponent(cc.Label).string = response[i].name;
+                    player.getChildByName("NAME").getComponent(cc.Label).string = `[${houses[houseIndex]}] ` + response[i].name;
                     player.getChildByName("CROWNS").getComponent(cc.Label).string = response[i].crowns;
                 }
             };

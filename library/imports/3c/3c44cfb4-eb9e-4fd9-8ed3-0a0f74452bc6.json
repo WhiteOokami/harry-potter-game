@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Hogwarts-Castle",
+    "texture": "f933fb2a-4694-43d0-9602-0624bb2d025b",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      2000,
+      1000
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      2000,
+      1000
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

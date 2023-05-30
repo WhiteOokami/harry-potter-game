@@ -2,6 +2,7 @@
 require('./assets/code/aboutPlayer');
 require('./assets/code/cameraFollow');
 require('./assets/code/client');
+require('./assets/code/colorTheme');
 require('./assets/code/enableGravity');
 require('./assets/code/enemyScript');
 require('./assets/code/gameManager');

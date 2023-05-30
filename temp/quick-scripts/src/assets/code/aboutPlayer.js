@@ -11,7 +11,8 @@ cc.Class({
     room: null,
     crowns: 0,
     openid: null,
-    serverIp: null
+    serverIp: null,
+    houseIndex: 0
   },
   // LIFE-CYCLE CALLBACKS:
   onLoad: function onLoad() {
