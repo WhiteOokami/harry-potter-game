@@ -140,9 +140,9 @@ cc.Class({
                 this.houseIndex = myData.data.houseIndex;
                 cc.find("Canvas/CROWNS/num").getComponent(cc.Label).string = myData.data.crowns;
                 cc.find("Canvas/WINS").getComponent(cc.Label).string = myData.data.wins + " wins";
-                cc.find("Canvas/LOSES").getComponent(cc.Label).string = myData.data.loses + " loses";
+                cc.find("Canvas/LOSES").getComponent(cc.Label).string = myData.data.loses + " losses";
                 cc.find("Canvas/USERNAME").getComponent(cc.Label).string = this.playerName;
-                cc.find("MANAGER").getComponent("colorTheme").changeColor(this.houseIndex);
+                cc.find("MANAGER").getComponent("colorTheme").changeColor("hi",this.houseIndex);
                 cc.sys.localStorage.setItem("username", JSON.stringify(this.playerName));
                 cc.sys.localStorage.setItem("password", JSON.stringify(this.password));
                 this.signInNode.active = false;
@@ -153,6 +153,20 @@ cc.Class({
             this.refreshLeader();
         });
         
+    },
+    changeHouse(num){
+        this.houseIndex = num;
+        this.ws = new WebSocket("ws://" + this.serverIp + ":3002");
+        this.ws.addEventListener("open", () => {
+            this.ws.send(JSON.stringify(new payLoad("house", [this.playerId, num])));
+        });
+        let that = this;
+        this.ws.addEventListener('message', ({ data }) => {
+            data = JSON.parse(data);
+            if (data.type == "success")
+                that.refreshLeader();
+        });
+
     },
     joinLobbySuccessfully() {
 
@@ -336,6 +350,7 @@ cc.Class({
 
     refreshLeader() {
         let houses =  ["Gry", "Huf", "Rav", "Sly"];
+        let that=this;
         if (cc.sys.platform == cc.sys.WECHAT_GAME) {
             wx.request({
                 url: "http://" + this.serverIp + ":3000/",
@@ -349,7 +364,8 @@ cc.Class({
                         let player = cc.instantiate(cc.find("Lobby Manager").getComponent("lobby").playerStatPrefab);
                         player.parent = cc.find("Lobby Manager").getComponent("lobby").leaderboardNode;
                         player.getChildByName("PLACE").getComponent(cc.Label).string = i + 1 + ".";
-                        player.getChildByName("NAME").getComponent(cc.Label).string = `[${houses[houseIndex]}] ` + response[i].name;
+                        if(response[i].playerId == this.playerId) player.getChildByName("NAME").getComponent(cc.Label).string = `[${houses[this.houseIndex]}] ` + response[i].name;
+                        else player.getChildByName("NAME").getComponent(cc.Label).string = `[${houses[response[i].houseIndex]}] ` + response[i].name;
                         player.getChildByName("CROWNS").getComponent(cc.Label).string = response[i].crowns;
                 }
             }
@@ -360,13 +376,13 @@ cc.Class({
 
             xhr.onreadystatechange = function () {
                 cc.find("Lobby Manager").getComponent("lobby").leaderboardNode.removeAllChildren();
-                console.log(xhr.responseText);
                 var response = JSON.parse(xhr.responseText).data;
                 for (var i = 0; i < response.length; i++) {
                     let player = cc.instantiate(cc.find("Lobby Manager").getComponent("lobby").playerStatPrefab);
                     player.parent = cc.find("Lobby Manager").getComponent("lobby").leaderboardNode;
                     player.getChildByName("PLACE").getComponent(cc.Label).string = i + 1 + ".";
-                    player.getChildByName("NAME").getComponent(cc.Label).string = `[${houses[houseIndex]}] ` + response[i].name;
+                    if(response[i].playerId == that.playerId) player.getChildByName("NAME").getComponent(cc.Label).string = `[${houses[that.houseIndex]}] ` + response[i].name;
+                    else player.getChildByName("NAME").getComponent(cc.Label).string = `[${houses[response[i].houseIndex]}] ` + response[i].name;
                     player.getChildByName("CROWNS").getComponent(cc.Label).string = response[i].crowns;
                 }
             };
@@ -378,6 +394,7 @@ cc.Class({
 
 
     refreshRecords() {
+        let houses = ["Gry", "Huf", "Rav", "Sly"];
         if (cc.sys.platform == cc.sys.WECHAT_GAME) {
             wx.request({
                 url: "http://" + this.serverIp + ":3001/",
@@ -390,7 +407,7 @@ cc.Class({
                         let player = cc.instantiate(cc.find("Lobby Manager").getComponent("lobby").playerRecordPrefab);
                         player.parent = cc.find("Lobby Manager").getComponent("lobby").recordsNode;
                         player.getChildByName("PLACE").getComponent(cc.Label).string = i + 1 + ".";
-                        player.getChildByName("NAME").getComponent(cc.Label).string = response[i].name;
+                        player.getChildByName("NAME").getComponent(cc.Label).string = `[${houses[response[i].houseIndex]}] ` + response[i].name;
                         player.getChildByName("SPEED").getComponent(cc.Label).string = response[i].speed + " s";
                     }
                 }
@@ -407,7 +424,7 @@ cc.Class({
                     let player = cc.instantiate(cc.find("Lobby Manager").getComponent("lobby").playerRecordPrefab);
                     player.parent = cc.find("Lobby Manager").getComponent("lobby").recordsNode;
                     player.getChildByName("PLACE").getComponent(cc.Label).string = i + 1 + ".";
-                    player.getChildByName("NAME").getComponent(cc.Label).string = response[i].name;
+                    player.getChildByName("NAME").getComponent(cc.Label).string = `[${houses[response[i].houseIndex]}] ` + response[i].name;
                     player.getChildByName("SPEED").getComponent(cc.Label).string = response[i].speed + " s" ;
                 }
             };
@@ -544,7 +561,7 @@ cc.Class({
             
         }
         
-        this.refreshLeader();   
+        this.refreshLeader();
         
     },
 

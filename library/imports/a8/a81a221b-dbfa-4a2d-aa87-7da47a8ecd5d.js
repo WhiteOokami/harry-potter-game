@@ -94,6 +94,7 @@ cc.Class({
   },
   sendEmoji: function sendEmoji(event, customEventData) {
     // send emoji, customEventData will be the type
+    console.log("send emoji");
     this.sendWebsocketMessage("emoji", [this.playerId, customEventData]);
     this.node.getComponent("gameManager").showEmojis();
   },
@@ -229,6 +230,7 @@ cc.Class({
     }
   },
   updateEmoji: function updateEmoji(id, type) {
+    console.log("playing ");
     this.players[id].getComponent("movement").playEmoji(type);
   },
   startCountDown: function startCountDown(num) {
@@ -352,7 +354,7 @@ cc.Class({
         // if didn't close on purpose, alert
         if (!_this.socketClosed) {
           _this.connectionErrorUI.active = true;
-          cc.find("Canvas/UI/MOBILE").active = false;
+          cc.find("Canvas/mainCamera/UI/MOBILE").active = false;
         }
       });
       this.ws.addEventListener('message', function (_ref2) {

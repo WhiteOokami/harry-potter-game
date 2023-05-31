@@ -1,22 +1,22 @@
 {
   "__type__": "cc.SpriteFrame",
   "content": {
-    "name": "i02_watchHand",
-    "texture": "837f760b-f21f-42b8-8e89-1d2dbbde8be9",
+    "name": "clock",
+    "texture": "d3e9adeb-0532-49ea-8166-008ce171b2ce",
     "atlas": "",
     "rect": [
-      88,
-      113,
-      161,
-      41
+      64,
+      40,
+      1147,
+      1199
     ],
     "offset": [
-      18.5,
-      16.5
+      -2.5,
+      0.5
     ],
     "originalSize": [
-      300,
-      300
+      1280,
+      1280
     ],
     "capInsets": [
       0,

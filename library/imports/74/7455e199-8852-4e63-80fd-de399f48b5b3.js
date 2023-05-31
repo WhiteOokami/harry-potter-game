@@ -12,20 +12,15 @@ cc.Class({
     following: false,
     // background: cc.Node,
     ui: cc.Node,
-    yOffset: 0,
     // paralaxLayers: [cc.Node],
     startPos: [],
     xOffsetPlayer: 0,
-    yOffsetPlayer: 0,
-    maxOffset: 20,
+    maxOffset: 50,
     startY: 0
   },
   // LIFE-CYCLE CALLBACKS:
   onLoad: function onLoad() {
     this.startPos = [0, 0, 0, 0, 0, 0, 0];
-  },
-  start: function start() {
-    startY = this.player.y;
   },
   update: function update(dt) {
     if (!this.following) {
@@ -35,9 +30,9 @@ cc.Class({
       }
     } else {
       var m = this.player.getComponent("movement");
-      if (m.movingRight && this.xOffsetPlayer < this.maxOffset) this.xOffsetPlayer += 20 * dt;else if (m.movingLeft && this.xOffsetPlayer > -this.maxOffset) this.xOffsetPlayer -= 20 * dt;else this.xOffsetPlayer /= 10;
+      if (m.movingRight && this.xOffsetPlayer < this.maxOffset) this.xOffsetPlayer += 40 * dt;else if (m.movingLeft && this.xOffsetPlayer > -this.maxOffset) this.xOffsetPlayer -= 40 * dt;else this.xOffsetPlayer /= 2;
       this.node.x = this.player.x + this.xOffsetPlayer;
-      this.node.y = this.player.y + (this.player.y - startY) * 0.5;
+      this.node.y = this.startY + (this.player.y = this.startY) / 2;
     } // for (let i = 0; i < this.paralaxLayers.length; i++) {
     //     this.paralaxLayers[i].setPosition(this.node.x / (i + 1) * 2 + this.startPos[i], this.node.y / (i + 1) * 2);
     //     if (Math.abs(this.node.x - this.paralaxLayers[i].x) >= (this.paralaxLayers[i].width - this.node.width)) {
@@ -46,10 +41,9 @@ cc.Class({
     //     }
     // }
     // this.background.setPosition(this.node.x, this.node.y);
+    // this.ui.x = this.node.x;
+    // this.ui.y = this.node.y;
 
-
-    this.ui.x = this.node.x;
-    this.ui.y = this.node.y;
   }
 });
 

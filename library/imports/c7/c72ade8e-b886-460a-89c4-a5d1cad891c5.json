@@ -1,22 +1,22 @@
 {
   "__type__": "cc.SpriteFrame",
   "content": {
-    "name": "i02_watchHand",
-    "texture": "837f760b-f21f-42b8-8e89-1d2dbbde8be9",
+    "name": "nextBeforeButton - Copy",
+    "texture": "1e6e3458-d9da-4977-9d90-c66fa9118d37",
     "atlas": "",
     "rect": [
-      88,
-      113,
-      161,
-      41
+      13,
+      6,
+      77,
+      61
     ],
     "offset": [
-      18.5,
-      16.5
+      1.5,
+      13.5
     ],
     "originalSize": [
-      300,
-      300
+      100,
+      100
     ],
     "capInsets": [
       0,

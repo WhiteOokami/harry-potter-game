@@ -86,6 +86,7 @@ cc.Class({
     },
     sendEmoji: function (event, customEventData) {
         // send emoji, customEventData will be the type
+        console.log("send emoji");
         this.sendWebsocketMessage("emoji", [this.playerId, customEventData]);
         this.node.getComponent("gameManager").showEmojis();
     },
@@ -234,6 +235,7 @@ cc.Class({
             
     },
     updateEmoji(id, type) {
+        console.log("playing ");
         this.players[id].getComponent("movement").playEmoji(type);
     },
     startCountDown(num) {
@@ -247,7 +249,7 @@ cc.Class({
     },
     recieveMessage(data) {
         let myData = JSON.parse(data);
-
+        
         switch (myData.type) {
             case "updatePlayerState":
                 if (myData.data[0] != this.playerId) {
@@ -348,7 +350,7 @@ cc.Class({
                 // if didn't close on purpose, alert
                 if (!this.socketClosed) {
                     this.connectionErrorUI.active = true;
-                    cc.find("Canvas/UI/MOBILE").active = false;
+                    cc.find("Canvas/mainCamera/UI/MOBILE").active = false;
                 }
                     
             })

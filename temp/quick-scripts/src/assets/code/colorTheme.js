@@ -29,15 +29,16 @@ cc.Class({
   // onLoad () {},
   start: function start() {},
   // update (dt) {},
-  changeColor: function changeColor(i) {
+  changeColor: function changeColor(event, customEventData) {
+    var i = parseInt(customEventData);
     if (i > 3) i = 0;
     this.node.getComponent("aboutPlayer").houseIndex = i;
 
     for (var index = 0; index < this.frames.length; index++) {
-      this.frames[index].active = false;
+      this.frames[index].getComponent(cc.Sprite).enabled = false;
     }
 
-    this.frames[i].active = true;
+    this.frames[i].getComponent(cc.Sprite).enabled = true;
 
     switch (i) {
       case 0:
@@ -96,6 +97,8 @@ cc.Class({
         ;
         break;
     }
+
+    cc.find("Lobby Manager").getComponent("lobby").changeHouse(i);
   }
 });
 

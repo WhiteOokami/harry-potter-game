@@ -19,7 +19,7 @@ cc.Class({
         sTheme1:"#5D5D5D",
         elements0:[cc.Node],
         elements1:[cc.Node],
-        frames:[cc.Node],
+        frames:[cc.Node]
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -32,12 +32,13 @@ cc.Class({
 
     // update (dt) {},
 
-    changeColor(i)
+    changeColor(event,customEventData)
     {
+        let i = parseInt(customEventData);
         if(i>3) i=0;
         this.node.getComponent("aboutPlayer").houseIndex = i;
-        for (let index = 0; index < this.frames.length; index++) {this.frames[index].active = false;}
-        this.frames[i].active = true;
+        for (let index = 0; index < this.frames.length; index++) {this.frames[index].getComponent(cc.Sprite).enabled = false;}
+        this.frames[i].getComponent(cc.Sprite).enabled = true;
         switch (i) {
             case 0:
                 for (let index = 0; index < this.elements0.length; index++) {this.elements0[index].color = new cc.Color().fromHEX(this.gTheme0)};
@@ -56,5 +57,7 @@ cc.Class({
                 for (let index = 0; index < this.elements1.length; index++) {this.elements1[index].color = new cc.Color().fromHEX(this.sTheme1)};
                 break;
         }
+
+        cc.find("Lobby Manager").getComponent("lobby").changeHouse(i);
     }
 });

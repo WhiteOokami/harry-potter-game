@@ -645,8 +645,8 @@
     "relativePath": "audio\\sound effects\\win.mp3"
   },
   "5bd57385-9d64-4f63-b80f-5c0fc75f41f7": {
-    "asset": 1684508727438,
-    "meta": 1684508734869,
+    "asset": 1685363820525,
+    "meta": 1685435978666,
     "relativePath": "code"
   },
   "aa7d1896-eae5-49a2-9c54-f3d6145181f1": {
@@ -800,8 +800,8 @@
     "relativePath": "prefabs\\platform.prefab"
   },
   "79b28ba8-e9c8-461a-8203-8f9ac2f74cfa": {
-    "asset": 1684507251952,
-    "meta": 1684508735942,
+    "asset": 1685523286197,
+    "meta": 1685523286204,
     "relativePath": "prefabs\\player.prefab"
   },
   "a422c179-24f7-4894-a30a-793cad6d63e4": {
@@ -810,8 +810,8 @@
     "relativePath": "prefabs\\playerRecord.prefab"
   },
   "afaa0609-fa19-4e93-843c-46887c166076": {
-    "asset": 1684662939678,
-    "meta": 1684662939684,
+    "asset": 1685496278416,
+    "meta": 1685496278429,
     "relativePath": "prefabs\\playerStats.prefab"
   },
   "117af859-e256-4dd3-91a7-211220c56781": {
@@ -845,13 +845,13 @@
     "relativePath": "prefabs\\watch.prefab"
   },
   "c2d79c48-f415-42f6-a563-ab6a1e2953eb": {
-    "asset": 1685374738127,
-    "meta": 1685374738135,
+    "asset": 1685500975717,
+    "meta": 1685509413062,
     "relativePath": "Scenes\\home.fire"
   },
   "5f811c91-2968-4bfd-93a7-d8de73d78216": {
-    "asset": 1685322133533,
-    "meta": 1685322133559,
+    "asset": 1685521202297,
+    "meta": 1685521202316,
     "relativePath": "Scenes\\map1.fire"
   },
   "06dcf76e-4e24-4667-aece-f1bb185c1f70": {
@@ -875,8 +875,8 @@
     "relativePath": "textures"
   },
   "d6721f34-c8ab-413b-937f-dfc54e7f8be4": {
-    "asset": 1684553606183,
-    "meta": 1684828278024,
+    "asset": 1685497150402,
+    "meta": 1685520131977,
     "relativePath": "textures\\actual"
   },
   "c0b3b894-f06c-41e2-94df-4f868e04a100": {
@@ -1340,8 +1340,8 @@
     "relativePath": "textures\\actual\\items\\i01_cake.png"
   },
   "2bdb07bb-8611-4fea-957e-58c047ae0981": {
-    "asset": 1684508727598,
-    "meta": 1684508737096,
+    "asset": 1685508308836,
+    "meta": 1685520131978,
     "relativePath": "textures\\actual\\mobile"
   },
   "f937ccc1-519b-4618-9fe3-8d8b79326556": {
@@ -1358,11 +1358,6 @@
     "asset": 1684507252113,
     "meta": 1684508737128,
     "relativePath": "textures\\actual\\mobile\\cakeButton.png"
-  },
-  "4a7ceb9f-7249-4d76-ba51-58a71148495c": {
-    "asset": 1684507252117,
-    "meta": 1684508737148,
-    "relativePath": "textures\\actual\\mobile\\joystickBall.png"
   },
   "3412a57b-255f-4b6c-a68b-04e4709e2c54": {
     "asset": 1684507252118,
@@ -1430,8 +1425,8 @@
     "relativePath": "textures\\actual\\tutorial\\small.PNG"
   },
   "e0217f4f-db91-4876-bd77-43780578756c": {
-    "asset": 1684508727613,
-    "meta": 1684508737321,
+    "asset": 1685508118303,
+    "meta": 1685520131982,
     "relativePath": "textures\\actual\\UI"
   },
   "2e5f344c-538b-461b-ba4f-7d00e082007f": {
@@ -1443,11 +1438,6 @@
     "asset": 1684507252037,
     "meta": 1684508737346,
     "relativePath": "textures\\actual\\UI\\emojiButton.png"
-  },
-  "837f760b-f21f-42b8-8e89-1d2dbbde8be9": {
-    "asset": 1684507252039,
-    "meta": 1684508737351,
-    "relativePath": "textures\\actual\\UI\\i02_watchHand.png"
   },
   "a2407780-a227-485f-a92a-2626a30c7f68": {
     "asset": 1684507252042,
@@ -1490,8 +1480,8 @@
     "relativePath": "Fonts\\WolfpackHalloweed-EaGOl.ttf"
   },
   "ee152e80-ceb8-4f12-9e3f-0e18ed0e8d97": {
-    "asset": 1684662883380,
-    "meta": 1684828278033,
+    "asset": 1685201129028,
+    "meta": 1685435978670,
     "relativePath": "textures\\actual\\environment_2"
   },
   "b86923f0-0465-4ba2-8e4b-a3b7dc4c0a3d": {
@@ -1530,8 +1520,8 @@
     "relativePath": "textures\\actual\\environment_2\\snitch.png"
   },
   "6124e18f-84d0-4aed-84a3-b4324b22f70f": {
-    "asset": 1685060035873,
-    "meta": 1685060035876,
+    "asset": 1685507787705,
+    "meta": 1685520131980,
     "relativePath": "textures\\actual\\mobile_2"
   },
   "db5331bc-c31d-4e2f-b2bd-200b99d64af0": {
@@ -1548,11 +1538,6 @@
     "asset": 1685153795197,
     "meta": 1685153795239,
     "relativePath": "textures\\actual\\environment_2\\platform.png"
-  },
-  "7455e199-8852-4e63-80fd-de399f48b5b3": {
-    "asset": 1685155158693,
-    "meta": 1685155162748,
-    "relativePath": "code\\cameraFollow.js"
   },
   "1c4eb12a-b395-471d-9223-c0ea949e3d36": {
     "asset": 1685156314942,
@@ -1589,11 +1574,6 @@
     "meta": 1685362022815,
     "relativePath": "textures\\actual\\mobile_2\\slytherin.png"
   },
-  "d956351d-9114-42b4-9866-a767a55e3d65": {
-    "asset": 1685363701388,
-    "meta": 1685363704344,
-    "relativePath": "textures\\actual\\nextBeforeButton.png"
-  },
   "f933fb2a-4694-43d0-9602-0624bb2d025b": {
     "asset": 1685365362340,
     "meta": 1685365362405,
@@ -1609,24 +1589,54 @@
     "meta": 1685368755986,
     "relativePath": "code\\aboutPlayer.js"
   },
+  "82c29da6-463c-423c-b266-cd57dfb44061": {
+    "asset": 1685495724924,
+    "meta": 1685495986289,
+    "relativePath": "code\\colorTheme.js"
+  },
+  "1e6e3458-d9da-4977-9d90-c66fa9118d37": {
+    "asset": 1685497150400,
+    "meta": 1685497154083,
+    "relativePath": "textures\\actual\\nextBeforeButton - Copy.png"
+  },
+  "d956351d-9114-42b4-9866-a767a55e3d65": {
+    "asset": 1685497100759,
+    "meta": 1685497154086,
+    "relativePath": "textures\\actual\\nextBeforeButton.png"
+  },
+  "f0b8d1a8-16cf-43d1-8d9a-deec81b3eac4": {
+    "asset": 1685502116585,
+    "meta": 1685502117999,
+    "relativePath": "code\\lobby.js"
+  },
+  "d3e9adeb-0532-49ea-8166-008ce171b2ce": {
+    "asset": 1685507787702,
+    "meta": 1685507787811,
+    "relativePath": "textures\\actual\\mobile_2\\clock.png"
+  },
+  "837f760b-f21f-42b8-8e89-1d2dbbde8be9": {
+    "asset": 1685508118301,
+    "meta": 1685508122923,
+    "relativePath": "textures\\actual\\UI\\i02_watchHand.png"
+  },
+  "4a7ceb9f-7249-4d76-ba51-58a71148495c": {
+    "asset": 1685508308834,
+    "meta": 1685508310921,
+    "relativePath": "textures\\actual\\mobile\\joystickBall.png"
+  },
+  "7455e199-8852-4e63-80fd-de399f48b5b3": {
+    "asset": 1685512046366,
+    "meta": 1685512065699,
+    "relativePath": "code\\cameraFollow.js"
+  },
   "a81a221b-dbfa-4a2d-aa87-7da47a8ecd5d": {
-    "asset": 1685368512332,
-    "meta": 1685368756201,
+    "asset": 1685523725660,
+    "meta": 1685524141314,
     "relativePath": "code\\client.js"
   },
   "caab8389-54a9-4314-8a83-34b371e6b330": {
-    "asset": 1685425821965,
-    "meta": 1685432254917,
+    "asset": 1685524929269,
+    "meta": 1685524935006,
     "relativePath": "code\\movement.js"
-  },
-  "f0b8d1a8-16cf-43d1-8d9a-deec81b3eac4": {
-    "asset": 1685432716833,
-    "meta": 1685432865889,
-    "relativePath": "code\\lobby.js"
-  },
-  "82c29da6-463c-423c-b266-cd57dfb44061": {
-    "asset": 1685433436463,
-    "meta": 1685433439664,
-    "relativePath": "code\\colorTheme.js"
   }
 }

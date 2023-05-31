@@ -3668,7 +3668,7 @@
       "__id__": 1
     },
     "_enabled": true,
-    "jumpHeight": 36000,
+    "jumpHeight": 359999,
     "smallJumpHeight": 25000,
     "jumpDuration": 0,
     "moveSpeed": 20000,
@@ -3712,9 +3712,9 @@
       "__id__": 100
     },
     "sounds": null,
-    "something": {
-      "__id__": 83
-    },
+    "busy": false,
+    "total": 0,
+    "sum": 0,
     "_id": ""
   },
   {
